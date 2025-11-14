@@ -25,45 +25,6 @@ body {
     border-top-right-radius: 10px;
 }
 
-/* ---------- Grid วัน ---------- */
-.day-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 15px;
-    margin: 20px 15px;
-}
-
-.day-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #f7f3f2;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    text-decoration: none;
-    color: black;
-    transition: all 0.3s;
-    text-align: center;
-}
-
-.day-card:hover {
-    background-color: #AA4A44;
-    color: white;
-    transform: translateY(-3px);
-}
-
-.day-number {
-    font-weight: bold;
-    font-size: 1.2em;
-    margin-bottom: 5px;
-}
-
-.day-info {
-    font-size: 0.9em;
-}
-
 /* ---------- Section วัน ---------- */
 .day-section {
     margin: 15px;
@@ -94,14 +55,11 @@ body {
 
 /* ---------- ตารางกิจกรรม ---------- */
 .table-wrapper {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
     margin: 0 15px 20px 15px;
 }
 
 .activity-table {
     width: 100%;
-    min-width: 600px;
     border-collapse: collapse;
     background-color: white;
 }
@@ -156,7 +114,7 @@ body {
     transform: translateY(-2px);
 }
 
-/* ---------- ลิงก์ไม่เป็นสีน้ำเงิน ---------- */
+/* ---------- ลิงก์ทุกหน้า ---------- */
 a {
     color: inherit;
     text-decoration: none;
@@ -167,40 +125,68 @@ a:hover {
     text-decoration: underline;
 }
 
+/* ---------- Grid หน้าเลือกวัน ---------- */
+.day-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+    margin: 20px 15px;
+}
+
+.day-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f3f2;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s;
+    text-align: center;
+}
+
+.day-card:hover {
+    background-color: #AA4A44;
+    color: white;
+    transform: translateY(-3px);
+}
+
+.day-number {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.day-info {
+    font-size: 0.9em;
+}
+
 /* ---------- Responsive มือถือ ---------- */
 @media screen and (max-width: 600px) {
-    .activity-table, .activity-table thead, .activity-table tbody, 
-    .activity-table th, .activity-table td, .activity-table tr {
-        display: block;
-    }
-
-    .activity-table th {
-        display: none;
-    }
-
-    .activity-table td {
-        border: none;
-        position: relative;
-        padding-left: 50%;
-        margin-bottom: 10px;
-        background: #fafafa;
-        border-radius: 6px;
-    }
-
-    .activity-table td::before {
-        position: absolute;
-        left: 10px;
-        top: 10px;
-        font-weight: bold;
-        white-space: nowrap;
-    }
-
-    .activity-table td:nth-of-type(1)::before { content: "เวลา"; }
-    .activity-table td:nth-of-type(2)::before { content: "กิจกรรม"; }
-    .activity-table td:nth-of-type(3)::before { content: "รายละเอียด"; }
-    .activity-table td:nth-of-type(4)::before { content: "ค่าใช้จ่าย"; }
-
     .day-grid {
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+    /* ตารางไม่ต้องเลื่อน, ลด padding เพื่อพอดีกับมือถือ */
+    .activity-table th,
+    .activity-table td {
+        padding: 6px 8px;
+        font-size: 0.85em;
+    }
+
+    .day-section {
+        margin: 10px;
+    }
+
+    .table-wrapper {
+        margin: 0 10px 15px 10px;
+    }
+
+    .btn {
+        padding: 8px 15px;
+        font-size: 0.9em;
     }
 }
