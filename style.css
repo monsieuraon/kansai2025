@@ -117,6 +117,17 @@ body {
     transform: translateY(-2px);
 }
 
+/* ---------- ทำให้ลิงก์ทุกหน้ากิจกรรมไม่เป็นสีน้ำเงินและไม่มีเส้นใต้ ---------- */
+.day-section a {
+    color: black;          /* สีตัวอักษรตามต้องการ */
+    text-decoration: none; /* เอาเส้นใต้ */
+}
+
+.day-section a:hover {
+    color: #AA4A44;        /* สีเวลาชี้เมาส์ */
+    text-decoration: underline; /* ใส่เส้นใต้เวลาชี้เมาส์ */
+}
+
 /* ---------- Responsive มือถือ ---------- */
 @media screen and (max-width: 600px) {
 
@@ -150,4 +161,5 @@ body {
     .activity-table td:nth-of-type(2)::before { content: "กิจกรรม"; }
     .activity-table td:nth-of-type(3)::before { content: "รายละเอียด"; }
     .activity-table td:nth-of-type(4)::before { content: "ค่าใช้จ่าย"; }
+
 }
