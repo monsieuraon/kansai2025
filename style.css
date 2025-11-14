@@ -163,3 +163,48 @@ body {
     .activity-table td:nth-of-type(4)::before { content: "ค่าใช้จ่าย"; }
 
 }
+/* ---------- Grid วัน ---------- */
+.day-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+    margin: 20px 15px;
+}
+
+.day-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f3f2;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-decoration: none; /* เอาเส้นใต้ */
+    color: black;           /* สีตัวอักษรปกติ */
+    transition: all 0.3s;
+    text-align: center;
+}
+
+.day-card:hover {
+    background-color: #AA4A44;
+    color: white;
+    transform: translateY(-3px);
+}
+
+.day-number {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.day-info {
+    font-size: 0.9em;
+}
+
+/* ---------- Mobile ---------- */
+@media screen and (max-width: 600px) {
+    .day-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+}
