@@ -1,180 +1,62 @@
-/* ---------- GENERAL ---------- */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
-}
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japan Trip 2025 - เลือกวัน</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-.container {
-    max-width: 1100px;
-    margin: 20px auto;
-    background-color: #fff;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    overflow: hidden;
-    padding: 20px;
-}
+<div class="container">
+    <div class="header">✈️ Japan Kansai - Sanyo - Sanin 2025</div>
 
-.header {
-    background-color: #AA4A44; /* สีแดงอิฐ */
-    color: white;
-    padding: 15px;
-    text-align: center;
-    font-size: 1.5em;
-    border-radius: 10px 10px 0 0;
-}
+    <h2 style="text-align:center; margin-top:20px;">เลือกวันเดินทาง</h2>
 
-/* ---------- INDEX / เลือกวัน ---------- */
-.day-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 20px;
-    margin: 30px 0;
-}
+    <div class="day-grid">
+        <a class="day-card" href="day1.html">
+            <div class="day-number">Day 1</div>
+            <div class="day-info">ศุกร์ 21 พ.ย. 🛬</div>
+        </a>
+        <a class="day-card" href="day2.html">
+            <div class="day-number">Day 2</div>
+            <div class="day-info">เสาร์ 22 พ.ย. 🚄</div>
+        </a>
+        <a class="day-card" href="day3.html">
+            <div class="day-number">Day 3</div>
+            <div class="day-info">อาทิตย์ 23 พ.ย. 🏯</div>
+        </a>
+        <a class="day-card" href="day4.html">
+            <div class="day-number">Day 4</div>
+            <div class="day-info">จันทร์ 24 พ.ย. 🌸</div>
+        </a>
+        <a class="day-card" href="day5.html">
+            <div class="day-number">Day 5</div>
+            <div class="day-info">อังคาร 25 พ.ย. 🏔️</div>
+        </a>
+        <a class="day-card" href="day6.html">
+            <div class="day-number">Day 6</div>
+            <div class="day-info">พุธ 26 พ.ย. 🛶</div>
+        </a>
+        <a class="day-card" href="day7.html">
+            <div class="day-number">Day 7</div>
+            <div class="day-info">พฤหัส 27 พ.ย. ⛩️</div>
+        </a>
+        <a class="day-card" href="day8.html">
+            <div class="day-number">Day 8</div>
+            <div class="day-info">ศุกร์ 28 พ.ย. ♨️</div>
+        </a>
+        <a class="day-card" href="day9.html">
+            <div class="day-number">Day 9</div>
+            <div class="day-info">เสาร์ 29 พ.ย. 🛬</div>
+        </a>
+        <a class="day-card" href="final.html">
+            <div class="day-number">Final</div>
+            <div class="day-info">สรุปทริป ✅</div>
+        </a>
+    </div>
 
-.day-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 15px;
-    background-color: #AA4A44;
-    color: white;
-    text-decoration: none;
-    border-radius: 12px;
-    font-weight: bold;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
-    transition: all 0.3s;
-    text-align: center;
-}
+</div>
 
-.day-card:hover {
-    background-color: #CC7722;
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
-}
-
-.day-number {
-    font-size: 1.2em;
-    margin-bottom: 5px;
-}
-
-.day-info {
-    font-size: 0.95em;
-}
-
-/* ---------- DAY PAGE / ตารางกิจกรรม ---------- */
-.day-section {
-    margin: 15px 0;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-.day-title {
-    background-color: #ffffff;
-    color: #400000;
-    padding: 10px 15px;
-    font-weight: bold;
-    border-bottom: 3px solid #AA4A44;
-    display: flex;
-    align-items: center;
-    font-size: 1.2em;
-}
-
-.day-pass {
-    background-color: #CC7722; /* สีทองแดง/น้ำตาลส้ม */
-    color: white;
-    padding: 2px 8px;
-    border-radius: 4px;
-    margin-left: 10px;
-    font-size: 0.8em;
-}
-
-.activity-table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: white;
-    margin: 0;
-}
-
-.activity-table th,
-.activity-table td {
-    padding: 10px;
-    border: 1px solid #e0e0e0;
-    text-align: left;
-    vertical-align: top;
-}
-
-.activity-table th {
-    background-color: #f7f3f2;
-    width: 100px;
-    font-weight: bold;
-    color: #400000;
-}
-
-.activity-table tr:nth-child(even) td {
-    background-color: #fafafa;
-}
-
-.highlight-pass {
-    background-color: #fffbf9;
-}
-
-.icon {
-    margin-right: 8px;
-    font-size: 1.2em;
-    color: #AA4A44;
-}
-
-/* ---------- SPECIAL TEXT ---------- */
-.onsen-detail {
-    color: #5500AA;
-    font-weight: bold;
-}
-
-.alert-detail {
-    color: #d9534f;
-    font-weight: bold;
-}
-
-.success-text {
-    color: #006400;
-    font-weight: bold;
-}
-
-.cost-detail {
-    color: #AA4A44;
-    font-weight: bold;
-}
-
-/* ---------- SUB-TABLE ---------- */
-.sub-table {
-    margin-top: 5px;
-    border: none;
-}
-
-.sub-table td {
-    border: none;
-    padding: 2px 0 2px 20px;
-    font-size: 0.9em;
-}
-
-/* ---------- BUTTON กลับหน้าเลือกวัน ---------- */
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #AA4A44;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    margin: 15px 0;
-    transition: all 0.3s;
-}
-
-.btn:hover {
-    background-color: #CC7722;
-    transform: translateY(-3px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
-}
+</body>
+</html>
