@@ -10,7 +10,7 @@ body {
     max-width: 1100px;
     margin: auto;
     background-color: #fff;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     border-radius: 10px;
     overflow: hidden;
 }
@@ -25,7 +25,71 @@ body {
     border-top-right-radius: 10px;
 }
 
-/* ---------- Grid วัน ---------- */
+/* ---------- ตารางกิจกรรม ---------- */
+.table-wrapper {
+    overflow-x: auto;
+    margin: 0 15px 20px 15px;
+}
+
+.activity-table {
+    width: 100%;
+    min-width: 600px;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.activity-table th,
+.activity-table td {
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    text-align: left;
+    vertical-align: top;
+}
+
+.activity-table th {
+    background-color: #f7f3f2;
+    font-weight: bold;
+    color: #400000;
+}
+
+.activity-table tr:nth-child(even) td {
+    background-color: #fafafa;
+}
+
+.highlight-pass {
+    background-color: #fffbf9;
+}
+
+/* ลิงก์ในตาราง */
+.activity-table a {
+    color: black;
+    text-decoration: none;
+}
+
+.activity-table a:hover {
+    color: #AA4A44;
+    text-decoration: underline;
+}
+
+/* ---------- ปุ่ม ---------- */
+.btn {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #AA4A44;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background-color: #CC7722;
+    transform: translateY(-2px);
+}
+
+/* ---------- หน้าเลือกวัน (Grid) ---------- */
 .day-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -39,13 +103,13 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #f7f3f2;
-    padding: 20px;
+    padding: 15px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     text-decoration: none;
     color: black;
-    transition: all 0.3s;
     text-align: center;
+    transition: all 0.3s;
 }
 
 .day-card:hover {
@@ -56,7 +120,7 @@ body {
 
 .day-number {
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: 1.2em;
     margin-bottom: 5px;
 }
 
@@ -64,7 +128,7 @@ body {
     font-size: 0.9em;
 }
 
-/* ---------- ลิงก์ทั่วไป ---------- */
+/* ---------- ลิงก์ทุกที่ ---------- */
 a {
     color: inherit;
     text-decoration: none;
@@ -77,6 +141,40 @@ a:hover {
 
 /* ---------- Responsive มือถือ ---------- */
 @media screen and (max-width: 600px) {
+
+    /* ตารางกิจกรรมมือถือ */
+    .activity-table, .activity-table thead, .activity-table tbody, 
+    .activity-table th, .activity-table td, .activity-table tr {
+        display: block;
+    }
+
+    .activity-table th {
+        display: none;
+    }
+
+    .activity-table td {
+        border: none;
+        position: relative;
+        padding-left: 50%;
+        margin-bottom: 10px;
+        background: #fafafa;
+        border-radius: 6px;
+    }
+
+    .activity-table td::before {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+
+    .activity-table td:nth-of-type(1)::before { content: "เวลา"; }
+    .activity-table td:nth-of-type(2)::before { content: "กิจกรรม"; }
+    .activity-table td:nth-of-type(3)::before { content: "รายละเอียด"; }
+    .activity-table td:nth-of-type(4)::before { content: "ค่าใช้จ่าย"; }
+
+    /* Grid วันมือถือ */
     .day-grid {
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     }
