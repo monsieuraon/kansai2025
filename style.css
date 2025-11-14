@@ -117,20 +117,19 @@ body {
     transform: translateY(-2px);
 }
 
-/* ---------- ทำให้ลิงก์ทุกหน้ากิจกรรมไม่เป็นสีน้ำเงินและไม่มีเส้นใต้ ---------- */
-.day-section a {
-    color: black;          /* สีตัวอักษรตามต้องการ */
-    text-decoration: none; /* เอาเส้นใต้ */
+/* ---------- ลิงก์ทุกหน้า ---------- */
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
-.day-section a:hover {
-    color: #AA4A44;        /* สีเวลาชี้เมาส์ */
-    text-decoration: underline; /* ใส่เส้นใต้เวลาชี้เมาส์ */
+a:hover {
+    color: #AA4A44;
+    text-decoration: underline;
 }
 
-/* ---------- Responsive มือถือ ---------- */
+/* ---------- Responsive มือถือ ตาราง ---------- */
 @media screen and (max-width: 600px) {
-
     .activity-table, .activity-table thead, .activity-table tbody, 
     .activity-table th, .activity-table td, .activity-table tr {
         display: block;
@@ -161,9 +160,9 @@ body {
     .activity-table td:nth-of-type(2)::before { content: "กิจกรรม"; }
     .activity-table td:nth-of-type(3)::before { content: "รายละเอียด"; }
     .activity-table td:nth-of-type(4)::before { content: "ค่าใช้จ่าย"; }
-
 }
-/* ---------- Grid วัน ---------- */
+
+/* ---------- Grid เลือกวัน ---------- */
 .day-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -180,10 +179,10 @@ body {
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    text-decoration: none; /* เอาเส้นใต้ */
-    color: black;           /* สีตัวอักษรปกติ */
-    transition: all 0.3s;
     text-align: center;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s;
 }
 
 .day-card:hover {
@@ -202,7 +201,7 @@ body {
     font-size: 0.9em;
 }
 
-/* ---------- Mobile ---------- */
+/* ---------- Responsive มือถือ Grid ---------- */
 @media screen and (max-width: 600px) {
     .day-grid {
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
