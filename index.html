@@ -1,29 +1,148 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>แผนการเดินทาง</title>
+    <title>แผนการเดินทาง ญี่ปุ่น 21-29 พฤศจิกายน (JR Sanyo-San'in Pass) - ปรับเวลาเช้า-ดึก</title>
     <style>
-        body { 
+        body {
             font-family: 'Arial', sans-serif;
-            background: #f0f0f0; 
+            background-color: #f0f0f0;
+            margin: 0;
             padding: 20px;
         }
-        .btn {
-            display: block;
-            padding: 15px;
-            margin: 10px 0;
-            background: #AA4A44;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            font-size: 20px;
-            text-align: center;
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            background-color: #fff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
         }
-        .btn:hover { background: #883b38; }
+
+        .header {
+            background-color: #AA4A44;
+            /* สีแดงอิฐ (Vermilion) */
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 1.5em;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .info-box {
+            background-color: #FFF9F8;
+            /* สีขาวอมส้มอ่อนมาก */
+            color: #400000;
+            /* สีน้ำตาลเข้ม */
+            padding: 15px;
+            margin: 15px;
+            border: 1px solid #AA4A44;
+            /* ขอบแดงอิฐ */
+            border-radius: 6px;
+        }
+
+        .day-section {
+            margin: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .day-title {
+            background-color: #ffffff;
+            color: #400000;
+            padding: 10px 15px;
+            font-weight: bold;
+            border-bottom: 3px solid #AA4A44;
+            display: flex;
+            align-items: center;
+            font-size: 1.2em;
+        }
+
+        .day-pass {
+            background-color: #CC7722;
+            /* สีทองแดง/น้ำตาลส้ม */
+            color: white;
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin-left: 10px;
+            font-size: 0.8em;
+        }
+
+        .activity-table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        .activity-table th,
+        .activity-table td {
+            padding: 10px;
+            border: 1px solid #e0e0e0;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        .activity-table th {
+            background-color: #f7f3f2;
+            width: 100px;
+            font-weight: bold;
+            color: #400000;
+        }
+
+        .activity-table tr:nth-child(even) td {
+            background-color: #fafafa;
+        }
+
+        .icon {
+            margin-right: 8px;
+            font-size: 1.2em;
+            color: #AA4A44;
+            /* ไอคอนสีแดงอิฐ */
+        }
+
+        .onsen-detail {
+            color: #5500AA;
+            /* สีม่วงเข้มสำหรับออนเซ็น */
+            font-weight: bold;
+        }
+
+        .alert-detail {
+            color: #d9534f;
+            font-weight: bold;
+        }
+
+        .success-text {
+            color: #006400;
+            font-weight: bold;
+        }
+
+        .cost-detail {
+            color: #AA4A44;
+            font-weight: bold;
+        }
+
+        .highlight-pass {
+            background-color: #fffbf9;
+        }
+
+        .sub-table {
+            margin-top: 5px;
+            border: none;
+        }
+
+        .sub-table td {
+            border: none;
+            padding: 2px 0 2px 20px;
+            font-size: 0.9em;
+        }
     </style>
 </head>
+
 <body>
 
 <h2>เลือกวันเดินทาง</h2>
