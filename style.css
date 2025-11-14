@@ -89,7 +89,7 @@ body {
     transform: translateY(-2px);
 }
 
-/* ---------- หน้าเลือกวัน (Grid) ---------- */
+/* ---------- หน้าเลือกวัน (Grid card) ---------- */
 .day-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -118,39 +118,55 @@ body {
     transform: translateY(-3px);
 }
 
-.day-number {
+.day-number { font-weight: bold; font-size: 1.2em; margin-bottom: 5px; }
+.day-info { font-size: 0.9em; }
+
+/* ---------- ตารางกิจกรรม ---------- */
+.table-wrapper { overflow-x: auto; margin: 0 15px 20px 15px; }
+
+.activity-table {
+    width: 100%;
+    min-width: 600px;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.activity-table th,
+.activity-table td {
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    text-align: left;
+    vertical-align: top;
+}
+
+.activity-table th {
+    background-color: #f7f3f2;
     font-weight: bold;
-    font-size: 1.2em;
-    margin-bottom: 5px;
+    color: #400000;
 }
 
-.day-info {
-    font-size: 0.9em;
+.activity-table tr:nth-child(even) td {
+    background-color: #fafafa;
 }
 
-/* ---------- ลิงก์ทุกที่ ---------- */
-a {
-    color: inherit;
+.highlight-pass { background-color: #fffbf9; }
+
+.activity-table a {
+    color: black;
     text-decoration: none;
 }
 
-a:hover {
+.activity-table a:hover {
     color: #AA4A44;
     text-decoration: underline;
 }
 
 /* ---------- Responsive มือถือ ---------- */
 @media screen and (max-width: 600px) {
-
-    /* ตารางกิจกรรมมือถือ */
     .activity-table, .activity-table thead, .activity-table tbody, 
-    .activity-table th, .activity-table td, .activity-table tr {
-        display: block;
-    }
+    .activity-table th, .activity-table td, .activity-table tr { display: block; }
 
-    .activity-table th {
-        display: none;
-    }
+    .activity-table th { display: none; }
 
     .activity-table td {
         border: none;
@@ -175,7 +191,5 @@ a:hover {
     .activity-table td:nth-of-type(4)::before { content: "ค่าใช้จ่าย"; }
 
     /* Grid วันมือถือ */
-    .day-grid {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    }
+    .day-grid { grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); }
 }
