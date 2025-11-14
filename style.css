@@ -1,3 +1,4 @@
+/* ---------- ตัวพื้นฐาน ---------- */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f0f0f0;
@@ -12,10 +13,12 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     overflow: hidden;
+    padding-bottom: 20px;
 }
 
+/* ---------- header ---------- */
 .header {
-    background-color: #AA4A44;
+    background-color: #AA4A44; /* สีแดงอิฐ */
     color: white;
     padding: 15px;
     text-align: center;
@@ -24,15 +27,17 @@ body {
     border-top-right-radius: 10px;
 }
 
+/* ---------- กล่อง info ---------- */
 .info-box {
-    background-color: #FFF9F8;
-    color: #400000;
+    background-color: #FFF9F8; /* ขาวอมส้มอ่อน */
+    color: #400000; /* น้ำตาลเข้ม */
     padding: 15px;
     margin: 15px;
     border: 1px solid #AA4A44;
     border-radius: 6px;
 }
 
+/* ---------- Section วัน ---------- */
 .day-section {
     margin: 15px;
     border: 1px solid #ddd;
@@ -52,7 +57,7 @@ body {
 }
 
 .day-pass {
-    background-color: #CC7722;
+    background-color: #CC7722; /* น้ำตาลส้ม */
     color: white;
     padding: 2px 8px;
     border-radius: 4px;
@@ -60,10 +65,12 @@ body {
     font-size: 0.8em;
 }
 
+/* ---------- ตารางกิจกรรม ---------- */
 .activity-table {
     width: 100%;
     border-collapse: collapse;
     background-color: white;
+    margin-top: 0;
 }
 
 .activity-table th,
@@ -76,7 +83,7 @@ body {
 
 .activity-table th {
     background-color: #f7f3f2;
-    width: 100px;
+    width: 120px;
     font-weight: bold;
     color: #400000;
 }
@@ -85,14 +92,21 @@ body {
     background-color: #fafafa;
 }
 
+/* ---------- ไฮไลท์พาส ---------- */
+.highlight-pass {
+    background-color: #fffbf9;
+}
+
+/* ---------- ไอคอน ---------- */
 .icon {
     margin-right: 8px;
     font-size: 1.2em;
     color: #AA4A44;
 }
 
+/* ---------- Text พิเศษ ---------- */
 .onsen-detail {
-    color: #5500AA;
+    color: #5500AA; /* สีม่วงเข้ม */
     font-weight: bold;
 }
 
@@ -111,9 +125,52 @@ body {
     font-weight: bold;
 }
 
-.highlight-pass {
-    background-color: #fffbf9;
+/* ---------- ตารางย่อย ---------- */
+.sub-table {
+    margin-top: 5px;
+    border: none;
 }
 
-.sub-table {
-    marg
+.sub-table td {
+    border: none;
+    padding: 2px 0 2px 20px;
+    font-size: 0.9em;
+}
+
+/* ---------- ปุ่มกลับหน้าเลือกวัน ---------- */
+.back-btn-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.back-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #AA4A44;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.back-btn:hover {
+    background-color: #CC7722;
+}
+
+/* ---------- ปุ่มเลือกวันหน้า index ---------- */
+.btn {
+    display: inline-block;
+    margin: 5px;
+    padding: 8px 15px;
+    background-color: #AA4A44;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background-color: #CC7722;
+}
