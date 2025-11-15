@@ -1,61 +1,131 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Japan Trip 2025 - เลือกวัน</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Japan Trip 2025 - เลือกวัน / Select Day</title>
+<style>
+    body {
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        background-color: #f4f4f9;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .header {
+        text-align: center;
+        font-size: 2em;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #ff7043;
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #333;
+    }
+    .day-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 20px;
+    }
+    .day-card {
+        background: white;
+        border-radius: 12px;
+        padding: 15px;
+        text-align: center;
+        text-decoration: none;
+        color: #333;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .day-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+    .day-number {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-bottom: 8px;
+        color: #ff7043;
+    }
+    .day-info {
+        font-size: 0.95em;
+        color: #666;
+    }
+    .btn {
+        display: inline-block;
+        margin: 30px auto 0;
+        padding: 10px 20px;
+        background-color: #ff7043;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .btn:hover {
+        background-color: #e64a19;
+    }
+</style>
 </head>
 <body>
 
 <div class="container">
     <div class="header">✈️ Japan Kansai - Sanyo - Sanin 2025</div>
 
-    <h2>เลือกวันเดินทาง</h2>
+    <h2>เลือกวันเดินทาง / Select Day</h2>
 
     <div class="day-grid">
         <a class="day-card" href="day1.html">
             <div class="day-number">Day 1</div>
-            <div class="day-info">ศุกร์ 21 พ.ย. 🛬</div>
+            <div class="day-info">ศุกร์ 21 พ.ย. 🛬 / Fri 21 Nov</div>
         </a>
         <a class="day-card" href="day2.html">
             <div class="day-number">Day 2</div>
-            <div class="day-info">เสาร์ 22 พ.ย. 🚄</div>
+            <div class="day-info">เสาร์ 22 พ.ย. 🚄 / Sat 22 Nov</div>
         </a>
         <a class="day-card" href="day3.html">
             <div class="day-number">Day 3</div>
-            <div class="day-info">อาทิตย์ 23 พ.ย. 🏯</div>
+            <div class="day-info">อาทิตย์ 23 พ.ย. 🏯 / Sun 23 Nov</div>
         </a>
         <a class="day-card" href="day4.html">
             <div class="day-number">Day 4</div>
-            <div class="day-info">จันทร์ 24 พ.ย. 🌸</div>
+            <div class="day-info">จันทร์ 24 พ.ย. 🌸 / Mon 24 Nov</div>
         </a>
         <a class="day-card" href="day5.html">
             <div class="day-number">Day 5</div>
-            <div class="day-info">อังคาร 25 พ.ย. 🏔️</div>
+            <div class="day-info">อังคาร 25 พ.ย. 🏔️ / Tue 25 Nov</div>
         </a>
         <a class="day-card" href="day6.html">
             <div class="day-number">Day 6</div>
-            <div class="day-info">พุธ 26 พ.ย. 🛶</div>
+            <div class="day-info">พุธ 26 พ.ย. 🛶 / Wed 26 Nov</div>
         </a>
         <a class="day-card" href="day7.html">
             <div class="day-number">Day 7</div>
-            <div class="day-info">พฤหัส 27 พ.ย. ⛩️</div>
+            <div class="day-info">พฤหัส 27 พ.ย. ⛩️ / Thu 27 Nov</div>
         </a>
         <a class="day-card" href="day8.html">
             <div class="day-number">Day 8</div>
-            <div class="day-info">ศุกร์ 28 พ.ย. ♨️</div>
+            <div class="day-info">ศุกร์ 28 พ.ย. ♨️ / Fri 28 Nov</div>
         </a>
         <a class="day-card" href="day9.html">
             <div class="day-number">Day 9</div>
-            <div class="day-info">เสาร์ 29 พ.ย. 🛬</div>
+            <div class="day-info">เสาร์ 29 พ.ย. 🛬 / Sat 29 Nov</div>
         </a>
         <a class="day-card" href="final.html">
             <div class="day-number">Final</div>
-            <div class="day-info">สรุปทริป ✅</div>
+            <div class="day-info">สรุปทริป ✅ / Trip Summary</div>
         </a>
     </div>
 
+    <p style="text-align:center;"><a class="btn" href="index.html">กลับหน้าแรก / Home</a></p>
+
 </div>
+
 </body>
 </html>
