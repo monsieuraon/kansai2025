@@ -2,7 +2,9 @@
 <html lang="th">
 <head>
 <meta charset="UTF-8">
-<title>Japanese Travel Phrases – Kansai Trip Full</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Japanese Travel Phrases – Kansai Trip</title>
+<link rel="stylesheet" href="style.css">
 <style>
 body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -11,10 +13,19 @@ body {
     line-height: 1.6;
     padding: 20px;
 }
-h1, h2 {
+.header {
+    font-size: 1.5em;
     color: #b58900;
+    margin-bottom: 20px;
+}
+.nav-links a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #268bd2;
+    font-weight: bold;
 }
 h2 {
+    color: #b58900;
     margin-top: 40px;
 }
 table {
@@ -30,6 +41,8 @@ th, td {
 th {
     background-color: #268bd2;
     color: #fff;
+    position: sticky;
+    top: 0;
 }
 td.question {
     background-color: #eee8d5;
@@ -49,8 +62,23 @@ td.translation {
 </head>
 <body>
 
-<h1>Japanese Travel Phrases – Kansai 2025 (Full Spoken Version)</h1>
+<div class="header">
+✈️ Japan Kansai - Sanyo - Sanin 2025 | <span class="nav-links"><a href="index.html">🏠 หน้าแรก</a> | <a href="index_en.html">EN</a></span>
+</div>
 
+<h1>Japanese Travel Phrases – Kansai Trip 2025</h1>
+
+<nav>
+  <a href="#train">🚆 รถไฟ / สถานี</a> |
+  <a href="#hotel">🏨 โรงแรม</a> |
+  <a href="#restaurant">🍣 ร้านอาหาร</a> |
+  <a href="#shopping">🛍️ ช้อปปิ้ง</a> |
+  <a href="#onsen">♨️ ออนเซ็น</a> |
+  <a href="#emergency">🚨 ฉุกเฉิน</a>
+</nav>
+
+<!-- 🚆 รถไฟ / สถานี -->
+<h2 id="train">🚆 รถไฟ / สถานี</h2>
 <table>
 <tr>
 <th>สถานการณ์</th>
@@ -59,8 +87,6 @@ td.translation {
 <th>อ่าน</th>
 <th>คำแปล</th>
 </tr>
-
-<!-- 🚆 สถานี / รถไฟ / ขนส่ง -->
 <tr><td>สถานีอยู่ตรงไหน</td><td class="question">駅はどこですか？</td><td class="answer">あっちだよ〜</td><td class="reading">Acchi da yo~</td><td class="translation">อยู่ทางโน้นอ่ะ</td></tr>
 <tr><td>รถไฟไป…ไหม</td><td class="question">この電車、[〇〇]行く？</td><td class="answer">うん、行くよ / 違うよ、次の電車だ</td><td class="reading">Un, iku yo / Chigau yo, tsugi no densha da</td><td class="translation">ใช่ / ไม่ใช่ ขบวนถัดไป</td></tr>
 <tr><td>ต้องเปลี่ยนรถที่ไหน</td><td class="question">どこで乗り換えるの？</td><td class="answer">[駅名]で乗り換えてね</td><td class="reading">[Eki‑mei] de norikaete ne</td><td class="translation">เปลี่ยนที่ [สถานี] นะ</td></tr>
@@ -71,8 +97,18 @@ td.translation {
 <tr><td>ซื้อตั๋วที่ไหน</td><td class="question">切符どこで買うの？</td><td class="answer">あの自販機で買えるよ</td><td class="reading">Ano jihanki de kaeru yo</td><td class="translation">ซื้อที่ตู้ขายอัตโนมัติตรงนั้นได้</td></tr>
 <tr><td>ทางออกไหนใกล้ที่สุด</td><td class="question">どの出口が近い？</td><td class="answer">この出口だよ</td><td class="reading">Kono deguchi da yo</td><td class="translation">ทางออกนี้แหละใกล้ที่สุด</td></tr>
 <tr><td>รถบัสไป…อยู่ตรงไหน</td><td class="question">〜行きのバスはどこ？</td><td class="answer">あっちに停まるよ</td><td class="reading">Acchi ni tomaru yo</td><td class="translation">จอดทางโน้น</td></tr>
+</table>
 
-<!-- 🏨 โรงแรม / ที่พัก -->
+<!-- 🏨 โรงแรม -->
+<h2 id="hotel">🏨 โรงแรม / ที่พัก</h2>
+<table>
+<tr>
+<th>สถานการณ์</th>
+<th>คุณถาม</th>
+<th>ภาษาพูดจริง / คำตอบ</th>
+<th>อ่าน</th>
+<th>คำแปล</th>
+</tr>
 <tr><td>เช็คอิน</td><td class="question">チェックインお願いします</td><td class="answer">はい、どうぞ〜</td><td class="reading">Hai, douzo~</td><td class="translation">เชิญครับ/ค่ะ</td></tr>
 <tr><td>เช็คเอาท์</td><td class="question">チェックアウトは何時？</td><td class="answer">10時だよ</td><td class="reading">Juu‑ji da yo</td><td class="translation">10 โมงนะ</td></tr>
 <tr><td>Wi-Fi</td><td class="question">Wi-Fiある？</td><td class="answer">うん、無料だよ</td><td class="reading">Un, muryou da yo</td><td class="translation">มี ฟรีนะ</td></tr>
@@ -82,8 +118,18 @@ td.translation {
 <tr><td>ห้องน้ำอยู่ไหน</td><td class="question">トイレはどこ？</td><td class="answer">あっちだよ</td><td class="reading">Acchi da yo</td><td class="translation">ทางโน้นแหละ</td></tr>
 <tr><td>ขอพัดลม/ฮีตเตอร์</td><td class="question">扇風機/ヒーターある？</td><td class="answer">あるよ、どうぞ</td><td class="reading">Aru yo, douzo</td><td class="translation">มีนะ เอาไปใช้ได้</td></tr>
 <tr><td>ขอเปลี่ยนห้อง</td><td class="question">部屋変えたい</td><td class="answer">わかった、ちょっと待ってて</td><td class="reading">Wakatta, chotto matte te</td><td class="translation">โอเค รอสักครู่</td></tr>
+</table>
 
-<!-- 🍣 ร้านอาหาร / ร้านกาแฟ -->
+<!-- 🍣 ร้านอาหาร -->
+<h2 id="restaurant">🍣 ร้านอาหาร / ร้านกาแฟ</h2>
+<table>
+<tr>
+<th>สถานการณ์</th>
+<th>คุณถาม</th>
+<th>ภาษาพูดจริง / คำตอบ</th>
+<th>อ่าน</th>
+<th>คำแปล</th>
+</tr>
 <tr><td>ขอเมนู</td><td class="question">メニューちょうだい</td><td class="answer">はい、どうぞ〜</td><td class="reading">Hai, douzo~</td><td class="translation">เชิญครับ/ค่ะ</td></tr>
 <tr><td>แนะนำเมนู</td><td class="question">何がおすすめ？</td><td class="answer">今日なら〜だね</td><td class="reading">Kyou nara ~ da ne</td><td class="translation">วันนี้แนะนำ ~</td></tr>
 <tr><td>สั่งอาหาร</td><td class="question">これ一つね</td><td class="answer">はい、かしこまり〜</td><td class="reading">Hai, kashikomar~i</td><td class="translation">รับทราบครับ/ค่ะ</td></tr>
@@ -92,28 +138,57 @@ td.translation {
 <tr><td>น้ำขอเพิ่ม</td><td class="question">水ちょうだい</td><td class="answer">はい、どうぞ</td><td class="reading">Hai, douzo</td><td class="translation">เอาน้ำไปเลย</td></tr>
 <tr><td>เก็บจาน</td><td class="question">下げてもいい？</td><td class="answer">うん、大丈夫だよ</td><td class="reading">Un, daijoubu da yo</td><td class="translation">ได้เลย</td></tr>
 <tr><td>ขอซอสเพิ่ม</td><td class="question">ソースもっとほしい</td><td class="answer">はい、どうぞ〜</td><td class="reading">Hai, douzo~</td><td class="translation">เชิญเลย</td></tr>
+</table>
 
-<!-- 🛍️ ร้านค้า / ช้อปปิ้ง -->
+<!-- 🛍️ ช้อปปิ้ง -->
+<h2 id="shopping">🛍️ ร้านค้า / ช้อปปิ้ง</h2>
+<table>
+<tr>
+<th>สถานการณ์</th>
+<th>คุณถาม</th>
+<th>ภาษาพูดจริง / คำตอบ</th>
+<th>อ่าน</th>
+<th>คำแปล</th>
+</tr>
 <tr><td>ราคาเท่าไหร่</td><td class="question">これいくら？</td><td class="answer">1000円だよ</td><td class="reading">Sen en da yo</td><td class="translation">1,000 เยนครับ/ค่ะ</td></tr>
 <tr><td>ขอซื้อ</td><td class="question">これちょうだい</td><td class="answer">はい、ありがとう〜</td><td class="reading">Hai, arigatou~</td><td class="translation">เอาเลย ขอบคุณครับ</td></tr>
 <tr><td>มีไซส์ไหม</td><td class="question">サイズある？</td><td class="answer">うん、あるよ / ごめん、ない</td><td class="reading">Un, aru yo / Gomen, nai</td><td class="translation">มี / ไม่มี</td></tr>
 <tr><td>ใช้บัตรเครดิตได้ไหม</td><td class="question">カード使える？</td><td class="answer">うん、大丈夫だよ</td><td class="reading">Un, daijoubu da yo</td><td class="translation">ใช้ได้</td></tr>
 <tr><td>ขอห่อของขวัญ</td><td class="question">包装してもらえる？</td><td class="answer">はい、いいよ〜</td><td class="reading">Hai, ii yo~</td><td class="translation">เอาเลยครับ/ค่ะ</td></tr>
+</table>
 
-<!-- ♨️ ออนเซ็น / สปา -->
+<!-- ♨️ ออนเซ็น -->
+<h2 id="onsen">♨️ ออนเซ็น / สปา</h2>
+<table>
+<tr>
+<th>สถานการณ์</th>
+<th>คุณถาม</th>
+<th>ภาษาพูดจริง / คำตอบ</th>
+<th>อ่าน</th>
+<th>คำแปล</th>
+</tr>
 <tr><td>ขอตั๋ว</td><td class="question">入浴券ちょうだい</td><td class="answer">はい、1枚ね</td><td class="reading">Hai, ichi‑mai ne</td><td class="translation">1 ใบครับ/ค่ะ</td></tr>
 <tr><td>ถามล็อกเกอร์</td><td class="question">ロッカーどこ？</td><td class="answer">あそこだよ</td><td class="reading">Asoko da yo</td><td class="translation">อยู่ตรงนั้น</td></tr>
 <tr><td>ขอผ้าเช็ดตัว</td><td class="question">タオル借りたい</td><td class="answer">はい、どうぞ〜</td><td class="reading">Hai, douzo~</td><td class="translation">เอาไปเลย</td></tr>
 <tr><td>ห้องน้ำ</td><td class="question">トイレどこ？</td><td class="answer">あっちだよ</td><td class="reading">Acchi da yo</td><td class="translation">ทางโน้นแหละ</td></tr>
 <tr><td>ถอดรองเท้าได้ไหม</td><td class="question">靴脱いでいい？</td><td class="answer">うん、大丈夫</td><td class="reading">Un, daijoubu</td><td class="translation">ได้เลย</td></tr>
+</table>
 
-<!-- 🚶 ถนน / สถานที่ทั่วไป / emergency -->
+<!-- 🚨 ฉุกเฉิน -->
+<h2 id="emergency">🚨 ฉุกเฉิน / Emergency</h2>
+<table>
+<tr>
+<th>สถานการณ์</th>
+<th>คุณถาม</th>
+<th>ภาษาพูดจริง / คำตอบ</th>
+<th>อ่าน</th>
+<th>คำแปล</th>
+</tr>
 <tr><td>ขอทางไป…</td><td class="question">〜行きたい</td><td class="answer">まっすぐ行って左だよ</td><td class="reading">Massugu itte hidari da yo</td><td class="translation">เดินตรงแล้วเลี้ยวซ้าย</td></tr>
 <tr><td>สถานีตำรวจอยู่ไหน</td><td class="question">警察どこ？</td><td class="answer">あそこだよ</td><td class="reading">Asoko da yo</td><td class="translation">อยู่ตรงนั้น</td></tr>
 <tr><td>ช่วยด้วย!</td><td class="question">助けて！</td><td class="answer">はい、どうしたの？</td><td class="reading">Hai, doushita no?</td><td class="translation">ครับ/ค่ะ เกิดอะไรขึ้น?</td></tr>
 <tr><td>ห้องน้ำสาธารณะ</td><td class="question">公衆トイレどこ？</td><td class="answer">あっちだよ</td><td class="reading">Acchi da yo</td><td class="translation">ทางโน้น</td></tr>
-<tr><td>ไฟไหม้ / ฉุกเฉิน</td><td class="question">火事だ！</td><td class="answer">逃げて！119！</td><td class="reading">Nigete! 119!</td><td class="translation">หนีเลย! โทร 119!</td></tr>
-
+<tr><td>โทรฉุกเฉิน</td><td class="question">110って何？</td><td class="answer">警察だよ</td><td class="reading">Keisatsu da yo</td><td class="translation">โทร 110 คือ ตำรวจ</td></tr>
 </table>
 
 </body>
