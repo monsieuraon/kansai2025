@@ -3,35 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final - Japan Trip 2025</title>
+    <title>Japan Trip 2025 - เลือกวัน</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* ปรับให้ card ทุกวันเท่ากัน */
+        .day-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 10px;
+        }
+        .day-card {
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            height: 100px; /* กำหนดสูงเท่ากัน */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-decoration: none;
+            color: black;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .day-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .day-number {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .day-info {
+            font-size: 0.9em;
+        }
+    </style>
 </head>
 <body>
-<p style="text-align:right;">
-    <a href="en/final-en.html">English 🇬🇧</a>
-</p>
-<div class="container">
 
+<div class="container">
     <div class="header">✈️ Japan Kansai - Sanyo - Sanin 2025</div>
 
-<div class="info-box" style="background-color: #AA4A44; color: white;">
-        <h3>💰 สรุปค่าใช้จ่ายหลัก (ไม่รวมค่าอาหาร/ที่พัก/ตั๋วเครื่องบิน)</h3>
-        <p><strong>✅ JR Sanyo-San'in Area Pass 7 วัน:</strong> <span class="success-text"
-                style="color:white;">¥27,000</span></p>
-        <p><strong>✅ JR West Kansai Area Pass 1 Day (Day 8):</strong> <span class="success-text"
-                style="color:white;">¥2,800</span></p>
-        <p><strong>✅ รวมค่าใช้จ่ายแยกทั้งหมด (ค่าเดินทาง/ค่าเข้า/ออนเซ็น/บัส):</strong> <span class="cost-detail"
-                style="color:white;">¥13,900</span></p>
-        <p style="font-size: 1.3em;"><strong>รวมค่าใช้จ่ายทั้งหมดในญี่ปุ่น:</strong> <span class="cost-detail"
-                style="color:white;">**ประมาณ ¥43,700**</span></p>
-    </div>
+    <h2>เลือกวันเดินทาง</h2>
 
+    <div class="day-grid">
+        <a class="day-card" href="day1.html">
+            <div class="day-number">Day 1</div>
+            <div class="day-info">ศุกร์ 21 พ.ย. 🛬</div>
+        </a>
+        <a class="day-card" href="day2.html">
+            <div class="day-number">Day 2</div>
+            <div class="day-info">เสาร์ 22 พ.ย. 🚄</div>
+        </a>
+        <a class="day-card" href="day3.html">
+            <div class="day-number">Day 3</div>
+            <div class="day-info">อาทิตย์ 23 พ.ย. 🏯</div>
+        </a>
+        <a class="day-card" href="day4.html">
+            <div class="day-number">Day 4</div>
+            <div class="day-info">จันทร์ 24 พ.ย. 🌸</div>
+        </a>
+        <a class="day-card" href="day5.html">
+            <div class="day-number">Day 5</div>
+            <div class="day-info">อังคาร 25 พ.ย. 🏔️</div>
+        </a>
+        <a class="day-card" href="day6.html">
+            <div class="day-number">Day 6</div>
+            <div class="day-info">พุธ 26 พ.ย. 🛶</div>
+        </a>
+        <a class="day-card" href="day7.html">
+            <div class="day-number">Day 7</div>
+            <div class="day-info">พฤหัส 27 พ.ย. ⛩️</div>
+        </a>
+        <a class="day-card" href="day8.html">
+            <div class="day-number">Day 8</div>
+            <div class="day-info">ศุกร์ 28 พ.ย. ♨️</div>
+        </a>
+        <a class="day-card" href="day9.html">
+            <div class="day-number">Day 9</div>
+            <div class="day-info">เสาร์ 29 พ.ย. 🛬</div>
+        </a>
+        <a class="day-card" href="final.html">
+            <div class="day-number">Final</div>
+            <div class="day-info">สรุปทริป ✅</div>
+        </a>
     </div>
- <p><a class="btn" href="index.html">กลับหน้าเลือกวัน</a></p>
 
 </div>
-
 </body>
-
 </html>
-
